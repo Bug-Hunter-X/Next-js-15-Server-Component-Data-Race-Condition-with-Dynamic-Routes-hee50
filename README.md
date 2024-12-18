@@ -1,0 +1,3 @@
+# Next.js 15 Server Component Data Race Condition
+
+This repository demonstrates a potential race condition in Next.js 15 when using server components with dynamic routes and asynchronous data fetching.  The bug occurs when a server component attempts to render UI elements based on data fetched asynchronously, before that data is fully available.  The solution demonstrates a way to handle this to ensure the UI correctly reflects the fetched data.  See the `server-component-bug.js` and `server-component-solution.js` files for code examples. 
